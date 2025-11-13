@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Evento Encontrar+se</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+
+  <!-- HEADER FIXO -->
+  <header>
+      <div class="logo">
+        <img src="IMAGENS/logo-1.png">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#evento" class="nav-link">Evento</a></li>
+          <li><a href="#convidados" class="nav-link">Convidados</a></li>
+          <li><a href="#registar" class="nav-link">Registar</a></li>
+          <li><a href="#info" class="nav-link">Mais info</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- INÍCIO -->
+    <section id="inicio" class="sec-inicio">
+      <div class="inicio-conteudo">
+        <div class="inicio-ilustracao">
+          <img src="IMAGENS/banner.jpeg">
+        </div>
+        <div class="inicio-texto">
+          <h1>Evento <span>Encontrar+se</span></h1>
+          <button class="btn" onclick="document.getElementById('registar').scrollIntoView({behavior:'smooth'})">
+            Registar
+          </button>
+        </div>
+      </div>
+
+      <div class="inicio-info">
+        <div class="info-item">
+          <img src="IMAGENS/ponto.png">
+          <p>MEO ARENA</p>
+        </div>
+        <div class="info-item">
+          <img src="IMAGENS/calendário.png">
+          <p>10 DE OUTUBRO</p>
+        </div>
+        <div class="info-item">
+          <img src="IMAGENS/horas.png">
+          <p>10H-21H</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTO -->
+    <section id="evento" class="sec sec-evento">
+      <div class="evento-poster">
+        <img src="IMAGENS/poster.png">
+      </div>
+      <button class="btn btn-small"
+        onclick="document.getElementById('registar').scrollIntoView({behavior:'smooth'})">
+        Registar
+      </button>
+    </section>
+
+    <!-- CONVIDADOS -->
+    <section id="convidados" class="sec sec-convidados">
+      <h2 class="subtitulo">Conhece os artistas que estarão contigo no evento…</h2>
+
+      <div class="grid-convidados">
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_afonso_cruz.jpg">
+          </div>
+          <p class="nome">AFONSO CRUZ</p>
+        </article>
+
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_aka_corleone.jpg">
+          </div>
+          <p class="nome">AKA CORLEONE</p>
+        </article>
+
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_maria_imaginario.jpg">
+          </div>
+          <p class="nome">MARIA IMAGINÁRIO</p>
+        </article>
+
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_julio_dolbeth.jpg">
+          </div>
+          <p class="nome">JÚLIO DOLBETH</p>
+        </article>
+
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_carolina_celas.jpg">
+          </div>
+          <p class="nome">CAROLINA CELAS</p>
+        </article>
+
+        <article class="convidado">
+          <div class="foto">
+            <img src="IMAGENS/ilustradores_tiago_albuquerque.jpg">
+          </div>
+          <p class="nome">TIAGO ALBUQUERQUE</p>
+        </article>
+      </div>
+
+      <button class="btn btn-small"
+        onclick="document.getElementById('registar').scrollIntoView({behavior:'smooth'})">
+        Registar
+      </button>
+    </section>
+
+     <!-- REGISTAR -->
+    <section id="registar" class="sec sec-registar">
+      <div class="registar-caixa">
+        <p class="registar-titulo">
+          Garante o teu lugar neste dia dedicado à saúde mental e bem-estar
+        </p>
+
+        <form id="formEvento">
+          <label for="nomeEvento">Nome</label>
+          <input type="text" id="nomeEvento" name="nomeEvento" required>
+
+          <label for="mailEvento">Mail</label>
+          <input type="email" id="mailEvento" name="mailEvento" required>
+
+          <button type="submit" class="btn btn-invertido">Registar</button>
+          <p id="msgOk" class="msg-ok escondido">
+            ✅ Registo enviado (simulado). Obrigado!
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAIS INFO -->
+    <section id="info" class="sec sec-info">
+      <h2>Localização e acessos</h2>
+
+      <div class="info-layout">
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.7895272481755!2d-9.096604623978063!3d38.76853117175201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19318570a93b63%3A0x1c465f5bdc842e42!2sMEO%20Arena!5e0!3m2!1spt-PT!2spt!4v1763041867110!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="acessos">
+          <div class="acesso-bloco">
+            <img src="IMAGENS/autocarro.png">
+            <p>Diurnas - 705; 725; 750; 759; 794<br>Noturnas - 208; 210</p>
+          </div>
+          <div class="acesso-bloco">
+            <img src="IMAGENS/comboio.png">
+            <p>Estação Oriente</p>
+          </div>
+          <div class="acesso-bloco">
+            <img src="IMAGENS/metro.png">
+            <p>Linha Vermelha - Estação Oriente</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-small"
+        onclick="document.getElementById('registar').scrollIntoView({behavior:'smooth'})">
+        Registar
+      </button>
+    </section>
+
+    <footer>
+    <p>© Encontrar+se - Evento You're Never Alone</p>
+  </footer>
+
+  <script>
+    // scrollspy simples para marcar o link ativo no header
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120; // compensa o header
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // formulário só a fingir que envia
+    const form = document.getElementById('formEvento');
+    const msgOk = document.getElementById('msgOk');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      msgOk.classList.remove('escondido');
+      form.reset();
+    });
+  </script>
